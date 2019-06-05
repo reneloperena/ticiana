@@ -258,8 +258,8 @@
       </div>
     </div>
     <div class="col col-md-6 col-lg-6">
-      <div class="package featured">
-        <p class="package-name">Small Business</p>
+      <div class="package">
+        <p class="package-name"></p>
         <hr>
         <p class="price">$80</p>
         <p class="disclaimer">por persona</p>
@@ -303,6 +303,31 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="main.js"></script>
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.3'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="677739306004365"
+  logged_in_greeting="Hola! cómo te podemos ayudar?"
+  logged_out_greeting="Hola! cómo te podemos ayudar?">
+</div>
 </body>
 
 </html>
