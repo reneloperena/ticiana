@@ -1,0 +1,186 @@
+$fa-font-path:        "fonts/webfonts";
+
+$brand-color: white;
+$link-color: white;
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/carousel';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/list-group';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/mustard-ui/src/scss/vars/breakpoints.scss';
+@import '../node_modules/mustard-ui/src/scss/vars/colors.scss';
+@import '../node_modules/mustard-ui/src/scss/mixins/breakpoint.scss';
+@import '../node_modules/mustard-ui/src/scss/mixins/centering.scss';
+@import '../node_modules/mustard-ui/src/scss/mixins/clearfix.scss';
+@import '../node_modules/mustard-ui/src/scss/utility/grid.scss';
+@import '../node_modules/mustard-ui/src/scss/utility/alignment.scss';
+@import '../node_modules/mustard-ui/src/scss/components/panels.scss';
+@import '../node_modules/mustard-ui/src/scss/components/pricing-tables.scss';
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Kenia&display=swap');
+
+//$font-primary: 'Kenia', cursive;
+$font-primary: 'Unica One', cursive;
+//$font-primary: 'Elsie Swash Caps', cursive;
+$font-secondary: 'Poppins',Arial, sans-serif;
+
+$color-primary: #000000;
+$color-secondary: #000000;
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+p {
+  font-family: $font-secondary;
+}
+html,
+body {
+  background-color: #fff;
+  font-family: $font-primary;
+  width: 100%;
+}
+
+body {
+  header {
+    z-index: 2;
+  }
+  color: #111;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse
+}
+
+.content {
+  display: flex;
+}
+
+
+.container {
+  padding: 15px;
+}
+.section,
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  :last-child {
+      margin-bottom: 0;
+  }
+}
+.full-viewport {
+  background-color: #ffffff;
+  height: 500px;
+  height: 100vh;
+}
+.full-width {
+  width: 100%;
+}
+.resize {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-section {
+  margin-top: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  h2 {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: 3rem;
+  }
+  .menu-row {
+    .menu-item {
+      p {
+        margin: 0;
+      }
+      p.title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: $font-primary;
+      }
+      p.description {
+        font-size: .8rem;
+      }
+      margin-bottom: 1.5rem;
+    }
+    .menu-pictures {
+      .menu-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 500px;
+        width: 100%;
+      }
+      .carousel {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+    }
+  }
+}
+
+ .nav-link {
+  font-weight: 700;
+  font-family: $font-primary;
+  color: #fff;
+  border-bottom-color: #fff;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+
+.about {
+  h2 {
+    color: $color-secondary;
+    font-size: 3rem;
+    font-family: $font-primary;
+  }
+  p {
+    text-justify: auto;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  margin: 20px;
+}
+.row {
+  align-items: center;
+  justify-content: center;
+}
+#chef-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+}
+
+#website-cover {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
