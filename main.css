@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
+
 .carousel {
   position: relative;
 }
@@ -7761,6 +7762,39 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  animation: bounce 2s infinite 2s;
+  transition: all 0.2s ease-in;
+}
+.scroll-down::before {
+  display: block;
+  position: relative;
+  bottom: 2px;
+  content: "";
+  transform: rotate(-45deg);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-width: 0px 0 2px 2px;
 }
 
 /*# sourceMappingURL=main.css.map */
