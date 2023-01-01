@@ -12,13 +12,13 @@
     "@fortawesome/fontawesome-free": "^5.8.2",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
-    "css-loader": "^2.1.1",
+    "css-loader": "^6.7.3",
     "grunt": "^1.0.4",
     "grunt-sass": "^3.0.2",
     "mustard-ui": "0.0.8",
     "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.32.2"
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0"
   }
 }
